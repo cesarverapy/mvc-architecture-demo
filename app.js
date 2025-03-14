@@ -8,6 +8,10 @@ app.get('/', (req, res)=>{
     res.send("welcome to the future e-commerce");
 });
 
+app.get('/about', (req, res) => {
+    res.send('about of the page')
+})
+
 app.listen(PORT, (error) =>{
     if(!error)
         console.log("server running on port "+ PORT)
